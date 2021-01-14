@@ -12,7 +12,7 @@ var lkTed = prompt('Do you like the name Ted?').toUpperCase();
   } else if (lkTed == "YES" || lkTed === "Y"){
     // console.log('Y or YES answere')
     
-    var frendLvl = frendLvl + 1;
+    frendLvl ++;
     // console.log(frendLvl)
     alert('Good answer your friend level is '+frendLvl)
   } else {
@@ -106,21 +106,23 @@ for (var i=0; i <3; i++){
   }
 }
 if (gotIt){
-  alert('Great job 8 was the answere!')
+  alert('Great job 8 was the answere!');
 }else{
-  alert('Too bad the number was 8!')
+  alert('Too bad the number was 8!');
 }
+alert('onto number7');
 
 //Q7//
-var numTries = 0;
+// var numTries = 0;
 var arrayOfAns = ['VR','ROBOTS','3DPRINTING','BOARDGAMES']
-for ( i7=6 ; i7 > 0 ; i7-- ){
+for ( i=6 ; i > 0 ; i-- ){
   var userGuess7 = prompt('What is one of my favorite things?').toUpperCase()
-  numTries ++ ;
-  for ( iA=0 ; iA < arrayOfAns.length ; iA++){
-    if (userGuess7 == arrayOfAns[iA]){
+  // numTries ++ ;
+  for ( var iA=0 ; iA < arrayOfAns.length ; iA++){
+    if (userGuess7 === arrayOfAns[iA]){
       alert('Nice! That is one of them!')
-      i7=0;
+      i=0;
+      frendLvl++;
       break;
     }
   }
@@ -128,7 +130,7 @@ for ( i7=6 ; i7 > 0 ; i7-- ){
 
 alert('you guessed '+numTries+' times! Possible andswers were:')
 
-for ( iB=0 ; iB < arrayOfAns.length ; iB++){
-  alert(arrayOfAns[iB])
+for ( i=0 ; i < arrayOfAns.length ; i++){
+  alert(arrayOfAns[i])
 }
 alert('your score'+frendLvl+'/7')
