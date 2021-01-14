@@ -114,7 +114,7 @@ if (gotIt){
 //Q7//
 var numTries = 0
 var arrayOfAns = ['VR','ROBOTS','3DPRINTING','BOARDGAMES']
-for ( i=5 ; i >= 0 ; i-- ){
+for ( i=5 ; i > 0 ; i-- ){
   var userGuess7 = prompt('What is one of my favorite things?').toUpperCase()
   numTries++;
   for ( var iA=0 ; iA < arrayOfAns.length ; iA++){
@@ -123,9 +123,14 @@ for ( i=5 ; i >= 0 ; i-- ){
       i=0;
       frendLvl++;
       break;
-    }
+    }else(i == 0)
+    // console.log('last try')
+      break;
+    
   }
+  
 }
+
 
 alert('you guessed '+numTries+' times! Possible answers were:')
 
