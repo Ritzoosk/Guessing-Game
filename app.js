@@ -86,7 +86,7 @@ if (frendLvl >= 1){
 };
 
 //Q6//
-for (var i=0; i <3; i++){
+for (var i=0; i <4; i++){
   let userGuess = prompt("Pick a number between 1 and 10");
   userGuess = parseInt(userGuess)
   while ( !userGuess || userGuess < 1 || userGuess > 10 ){
@@ -110,14 +110,11 @@ if (gotIt){
 }else{
   alert('Too bad the number was 8!');
 }
-alert('onto number7');
 
 //Q7//
-// var numTries = 0;
 var arrayOfAns = ['VR','ROBOTS','3DPRINTING','BOARDGAMES']
 for ( i=6 ; i > 0 ; i-- ){
   var userGuess7 = prompt('What is one of my favorite things?').toUpperCase()
-  // numTries ++ ;
   for ( var iA=0 ; iA < arrayOfAns.length ; iA++){
     if (userGuess7 === arrayOfAns[iA]){
       alert('Nice! That is one of them!')
