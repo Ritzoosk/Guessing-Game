@@ -137,4 +137,4 @@ alert('you guessed '+numTries+' times! Possible answers were:')
 for ( i=0 ; i < arrayOfAns.length ; i++){
   alert(arrayOfAns[i])
 }
-alert('your score'+frendLvl+'/7')
+alert(usrNm+' your score was'+frendLvl+'/7')
