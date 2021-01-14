@@ -106,15 +106,17 @@ for (var i=0; i <4; i++){
   }
 }
 if (gotIt){
-  alert('Great job 8 was the answere!');
+  alert('Great job 8 was the answer!');
 }else{
   alert('Too bad the number was 8!');
 }
 
 //Q7//
+var numTries = 0
 var arrayOfAns = ['VR','ROBOTS','3DPRINTING','BOARDGAMES']
-for ( i=6 ; i > 0 ; i-- ){
+for ( i=5 ; i >= 0 ; i-- ){
   var userGuess7 = prompt('What is one of my favorite things?').toUpperCase()
+  numTries++;
   for ( var iA=0 ; iA < arrayOfAns.length ; iA++){
     if (userGuess7 === arrayOfAns[iA]){
       alert('Nice! That is one of them!')
@@ -125,7 +127,7 @@ for ( i=6 ; i > 0 ; i-- ){
   }
 }
 
-alert('you guessed '+numTries+' times! Possible andswers were:')
+alert('you guessed '+numTries+' times! Possible answers were:')
 
 for ( i=0 ; i < arrayOfAns.length ; i++){
   alert(arrayOfAns[i])
