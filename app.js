@@ -137,13 +137,13 @@ q6();
 function q7(){
 var numTries = 0
 var arrayOfAns = ['VR','ROBOTS','3DPRINTING','BOARDGAMES']
-for ( i=6 ; i >= 0 ; i-- ){
+for ( var i=6 ; i >= 0 ; i-- ){
   var userGuess7 = prompt('What is one of my favorite things?').toUpperCase()
   numTries++;
   for ( var iA=0 ; iA < arrayOfAns.length ; iA++){
     if (userGuess7 === arrayOfAns[iA]){
       alert('Nice! That is one of them!')
-      i=0;
+      i=-1;
       frendLvl++;
       break;
     }else(i == 0)
@@ -153,8 +153,8 @@ for ( i=6 ; i >= 0 ; i-- ){
 
 alert('you guessed '+numTries+' times! Possible answers were:')
 
-for ( i=0 ; i < arrayOfAns.length ; i++){
-  alert(arrayOfAns[i])
+for ( var j=0 ; j < arrayOfAns.length ; j++){
+  alert(arrayOfAns[j])
 }
 }
 }
