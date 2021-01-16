@@ -1,18 +1,54 @@
-h1 {
-  color: black;
-  background-color: darkgray;
-}
 
 body {
-  background-color: darkgrey;
+  background-image: url('siteBackground.jpg');
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
+  padding-top: 100px;
+  padding-bottom: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 100%;
+  margin-bottom: 50px;
+}
+.title{
+  background-color: rgb(253, 207, 0);
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: larger;
+  padding: 10px 0;
+  left: 0px;
+  right: 0px;
+}
+#profilePic{
+  z-index: auto ;
+  height: 200px;
+  border-radius: 100%;
+  overflow: hidden;
+  border: thick rgb(0, 0, 0);
+}
+.heading1{
+  font-size:200%
 }
 
-div {
-  /* display: inline-block; */
-  float: left;
-  height: 100px;
-  width: 100px;
-  border: black thin solid;
-  /* margin: 10px; */
+.mylists{
+  margin-top: 200px;
+  background-color: rgb(253, 207, 0);
+
+float: left;
+width: 400px;
+text-align: left;
+}
+
+.blurb, .title{
+  z-index: auto;
+  background-color: rgb(253, 207, 0);
+
+  position:relative;
+  left: 50px;
+  top: 10px;
+  width:1000px;
+  margin: 20px;
 }
 
